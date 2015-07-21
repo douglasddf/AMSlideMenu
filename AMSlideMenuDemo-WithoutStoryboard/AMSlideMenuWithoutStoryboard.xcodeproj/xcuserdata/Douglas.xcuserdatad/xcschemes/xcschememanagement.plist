@@ -4,7 +4,7 @@
 <dict>
 	<key>SchemeUserState</key>
 	<dict>
-		<key>AMSlideMenu.xcscheme</key>
+		<key>AMSlideMenuWithoutStoryboard.xcscheme</key>
 		<dict>
 			<key>orderHint</key>
 			<integer>0</integer>
@@ -12,12 +12,12 @@
 	</dict>
 	<key>SuppressBuildableAutocreation</key>
 	<dict>
-		<key>3E9C298D1869CAD700E7F5E5</key>
+		<key>7545A2CA18AE915F00B14C83</key>
 		<dict>
 			<key>primary</key>
 			<true/>
 		</dict>
-		<key>3E9C29AE1869CAD700E7F5E5</key>
+		<key>7545A2EB18AE915F00B14C83</key>
 		<dict>
 			<key>primary</key>
 			<true/>

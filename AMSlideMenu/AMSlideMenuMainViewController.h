@@ -27,22 +27,19 @@
 #import <UIKit/UIKit.h>
 #import "AMSlideMenuProtocols.h"
 #import "AMSlideMenuLeftTableViewController.h"
-#import "AMSlideMenuRightTableViewController.h"
+
 
 typedef enum {
-    AMPrimaryMenuLeft,
-    AMPrimaryMenuRight
+    AMPrimaryMenuLeft
 } AMPrimaryMenu;
 
 typedef enum {
-    AMSlideMenuLeft,
-    AMSlideMenuRight
+    AMSlideMenuLeft
 } AMSlideMenu;
 
 typedef enum {
     AMSlideMenuClosed,
-    AMSlideMenuLeftOpened,
-    AMSlideMenuRightOpened,
+    AMSlideMenuLeftOpened
 } AMSlideMenuState;
 
 @protocol AMSlideMenuMultipleStoryboarding <NSObject>
@@ -76,7 +73,7 @@ typedef enum {
 @property (weak, nonatomic) id<AMSlideMenuDelegate> slideMenuDelegate;
 
 @property (strong, nonatomic) AMSlideMenuLeftTableViewController *leftMenu;
-@property (strong, nonatomic) AMSlideMenuRightTableViewController *rightMenu;
+
 @property (strong, nonatomic) UINavigationController *currentActiveNVC;
 
 @property (strong, nonatomic) UITapGestureRecognizer *tapGesture;
@@ -101,22 +98,10 @@ typedef enum {
 - (void)configureLeftMenuButton:(UIButton *)button;
 
 /**
- * Override this method for customize right menu button.
- * @param Left button instance to encapsulate
- */
-- (void)configureRightMenuButton:(UIButton *)button;
-
-/**
  * Override this method for setting visible width for left menu.
  * @return The left menu width (Default will return 250)
  */
 - (CGFloat)leftMenuWidth;
-
-/**
- * Override this method for setting visible width for right menu.
- * @return The right menu width (Default will return 250)
- */
-- (CGFloat)rightMenuWidth;
 
 /**
  * Override this method to change the animation duration of opening the menu
@@ -157,27 +142,12 @@ typedef enum {
 - (NSIndexPath *)initialIndexPathForLeftMenu;
 
 /**
- * Override this method to set which of
- * indexPaths will be selected automatically on first time for right menu
- * @return Default will return (0, 0)
- */
-- (NSIndexPath *)initialIndexPathForRightMenu;
-
-/**
  * Override this method and return segue identifier that will be performed
  * when cell at indexPath will be selected from left menu
  * @param indexPath of left menu table
  * @return Segue identifier for input indexPath
  */
 - (NSString *)segueIdentifierForIndexPathInLeftMenu:(NSIndexPath *)indexPath;
-
-/**
- * Override this method and return segue identifier that will be performed
- * when cell at indexPath will be selected from right menu
- * @param indexPath of right menu table
- * @return Segue identifier for input indexPath
- */
-- (NSString *)segueIdentifierForIndexPathInRightMenu:(NSIndexPath *)indexPath;
 
 /**
  * Override this method to configure slide layer. (e.g. for shadow)
@@ -200,25 +170,11 @@ typedef enum {
 - (BOOL)deepnessForLeftMenu;
 
 /**
- * Override this method if you want to enable or disable deepness in right menu
- * Default value is NO
- * @return YES or NO
- */
-- (BOOL)deepnessForRightMenu;
-
-/**
  * Override this method if you want to enable or disable darkness effect on content vc while left menu is opening
  * Default value is 0
  * @return CGFloat range of [0,1]
  */
 - (CGFloat)maxDarknessWhileLeftMenu;
-
-/**
- * Override this method if you want to enable or disable darkness effect on content vc while right menu is opening
- * Default value is 0
- * @return CGFloat range of [0,1]
- */
-- (CGFloat)maxDarknessWhileRightMenu;
 
 /**
  * Call this method if you want to fix status bar with custom view
@@ -252,18 +208,6 @@ typedef enum {
 - (void)openLeftMenuAnimated:(BOOL)animated;
 
 /**
- * Opens Right menu by animation
- */
-- (void)openRightMenu;
-
-/**
- * Opens Right menu
- * @param animated indicates if menu should be openen
- * by animation
- */
-- (void)openRightMenuAnimated:(BOOL)animated;
-
-/**
  * Closes Left menu by animation
  */
 - (void)closeLeftMenu;
@@ -275,17 +219,7 @@ typedef enum {
  */
 - (void)closeLeftMenuAnimated:(BOOL)animated;
 
-/**
- * Closes Right menu by animation
- */
-- (void)closeRightMenu;
 
-/**
- * Closes Right menu
- * @param animated indicates if menu should be closed
- * by animation
- */
-- (void)closeRightMenuAnimated:(BOOL)animated;
 
 /**
  * makes switch between active controller to input controller

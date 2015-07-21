@@ -8,7 +8,7 @@
 
 #import "MainVC.h"
 #import "LeftMenuTVC.h"
-#import "RightMenuTVC.h"
+
 
 @interface MainVC ()
 
@@ -31,7 +31,6 @@
     *     Initializing menus
     *******************************/
     self.leftMenu = [[LeftMenuTVC alloc] initWithNibName:@"LeftMenuTVC" bundle:nil];
-    self.rightMenu = [[RightMenuTVC alloc] initWithNibName:@"RightMenuTVC" bundle:nil];
    /*******************************
     *     End Initializing menus
     *******************************/
@@ -61,14 +60,8 @@
     [button setImage:[UIImage imageNamed:@"icon-menu.png"] forState:UIControlStateNormal];
 }
 
-- (BOOL)deepnessForLeftMenu
-{
-    return YES;
-}
 
-- (CGFloat)maxDarknessWhileRightMenu
-{
-    return 0.5f;
-}
+
+
 
 @end

@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <Scheme
-   LastUpgradeVersion = "0620"
+   LastUpgradeVersion = "0700"
    version = "1.3">
    <BuildAction
       parallelizeBuildables = "YES"
@@ -14,77 +14,80 @@
             buildForAnalyzing = "YES">
             <BuildableReference
                BuildableIdentifier = "primary"
-               BlueprintIdentifier = "3E9C298D1869CAD700E7F5E5"
-               BuildableName = "AMSlideMenu.app"
-               BlueprintName = "AMSlideMenu"
-               ReferencedContainer = "container:AMSlideMenu.xcodeproj">
+               BlueprintIdentifier = "7545A2CA18AE915F00B14C83"
+               BuildableName = "AMSlideMenuWithoutStoryboard.app"
+               BlueprintName = "AMSlideMenuWithoutStoryboard"
+               ReferencedContainer = "container:AMSlideMenuWithoutStoryboard.xcodeproj">
             </BuildableReference>
          </BuildActionEntry>
       </BuildActionEntries>
    </BuildAction>
    <TestAction
+      buildConfiguration = "Debug"
       selectedDebuggerIdentifier = "Xcode.DebuggerFoundation.Debugger.LLDB"
       selectedLauncherIdentifier = "Xcode.DebuggerFoundation.Launcher.LLDB"
-      shouldUseLaunchSchemeArgsEnv = "YES"
-      buildConfiguration = "Debug">
+      shouldUseLaunchSchemeArgsEnv = "YES">
       <Testables>
          <TestableReference
             skipped = "NO">
             <BuildableReference
                BuildableIdentifier = "primary"
-               BlueprintIdentifier = "3E9C29AE1869CAD700E7F5E5"
-               BuildableName = "AMSlideMenuTests.xctest"
-               BlueprintName = "AMSlideMenuTests"
-               ReferencedContainer = "container:AMSlideMenu.xcodeproj">
+               BlueprintIdentifier = "7545A2EB18AE915F00B14C83"
+               BuildableName = "AMSlideMenuWithoutStoryboardTests.xctest"
+               BlueprintName = "AMSlideMenuWithoutStoryboardTests"
+               ReferencedContainer = "container:AMSlideMenuWithoutStoryboard.xcodeproj">
             </BuildableReference>
          </TestableReference>
       </Testables>
       <MacroExpansion>
          <BuildableReference
             BuildableIdentifier = "primary"
-            BlueprintIdentifier = "3E9C298D1869CAD700E7F5E5"
-            BuildableName = "AMSlideMenu.app"
-            BlueprintName = "AMSlideMenu"
-            ReferencedContainer = "container:AMSlideMenu.xcodeproj">
+            BlueprintIdentifier = "7545A2CA18AE915F00B14C83"
+            BuildableName = "AMSlideMenuWithoutStoryboard.app"
+            BlueprintName = "AMSlideMenuWithoutStoryboard"
+            ReferencedContainer = "container:AMSlideMenuWithoutStoryboard.xcodeproj">
          </BuildableReference>
       </MacroExpansion>
+      <AdditionalOptions>
+      </AdditionalOptions>
    </TestAction>
    <LaunchAction
+      buildConfiguration = "Debug"
       selectedDebuggerIdentifier = "Xcode.DebuggerFoundation.Debugger.LLDB"
       selectedLauncherIdentifier = "Xcode.DebuggerFoundation.Launcher.LLDB"
       launchStyle = "0"
       useCustomWorkingDirectory = "NO"
-      buildConfiguration = "Debug"
       ignoresPersistentStateOnLaunch = "NO"
       debugDocumentVersioning = "YES"
+      debugServiceExtension = "internal"
       allowLocationSimulation = "YES">
       <BuildableProductRunnable
          runnableDebuggingMode = "0">
          <BuildableReference
             BuildableIdentifier = "primary"
-            BlueprintIdentifier = "3E9C298D1869CAD700E7F5E5"
-            BuildableName = "AMSlideMenu.app"
-            BlueprintName = "AMSlideMenu"
-            ReferencedContainer = "container:AMSlideMenu.xcodeproj">
+            BlueprintIdentifier = "7545A2CA18AE915F00B14C83"
+            BuildableName = "AMSlideMenuWithoutStoryboard.app"
+            BlueprintName = "AMSlideMenuWithoutStoryboard"
+            ReferencedContainer = "container:AMSlideMenuWithoutStoryboard.xcodeproj">
          </BuildableReference>
       </BuildableProductRunnable>
       <AdditionalOptions>
       </AdditionalOptions>
    </LaunchAction>
    <ProfileAction
+      buildConfiguration = "Release"
       shouldUseLaunchSchemeArgsEnv = "YES"
       savedToolIdentifier = ""
       useCustomWorkingDirectory = "NO"
-      buildConfiguration = "Release"
       debugDocumentVersioning = "YES">
       <BuildableProductRunnable
          runnableDebuggingMode = "0">
          <BuildableReference
             BuildableIdentifier = "primary"
-            BlueprintIdentifier = "3E9C298D1869CAD700E7F5E5"
-            BuildableName = "AMSlideMenu.app"
-            BlueprintName = "AMSlideMenu"
-            ReferencedContainer = "container:AMSlideMenu.xcodeproj">
+            BlueprintIdentifier = "7545A2CA18AE915F00B14C83"
+            BuildableName = "AMSlideMenuWithoutStoryboard.app"
+            BlueprintName = "AMSlideMenuWithoutStoryboard"
+            ReferencedContainer = "container:AMSlideMenuWithoutStoryboard.xcodeproj">
          </BuildableReference>
       </BuildableProductRunnable>
    </ProfileAction>

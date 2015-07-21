@@ -28,10 +28,10 @@
 
 @class AMSlideMenuMainViewController;
 
-@interface AMSlideMenuLeftTableViewController : UITableViewController
+@interface AMSlideMenuLeftTableViewController : UIViewController <UITableViewDataSource,UITableViewDelegate>
 
 @property (weak, nonatomic) AMSlideMenuMainViewController *mainVC;
-
+@property(weak, nonatomic) IBOutlet UITableView* tableView;
 // Only afor non storyboard use
 - (void)openContentNavigationController:(UINavigationController *)nvc;
 

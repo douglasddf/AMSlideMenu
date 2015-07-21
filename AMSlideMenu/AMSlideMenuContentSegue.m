@@ -68,16 +68,7 @@
         navItem.leftBarButtonItem = [[UIBarButtonItem alloc] initWithCustomView:leftBtn];
     }
     
-    if (mainVC.rightMenu)
-    {
-        UIButton *rightBtn = [UIButton buttonWithType:UIButtonTypeCustom];
-        [mainVC configureRightMenuButton:rightBtn];
-        [rightBtn addTarget:mainVC action:@selector(openRightMenu) forControlEvents:UIControlEventTouchUpInside];
-        
-        navItem.rightBarButtonItem = [[UIBarButtonItem alloc] initWithCustomView:rightBtn];
-    }
-
-
+    
     //Waiting for calling viewWillApear in nvc
     double delayInSeconds = 0;
     dispatch_time_t popTime = dispatch_time(DISPATCH_TIME_NOW, (int64_t)(delayInSeconds * NSEC_PER_SEC));

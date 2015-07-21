@@ -45,18 +45,7 @@
     navItem.leftBarButtonItem = [[UIBarButtonItem alloc] initWithCustomView:leftBtn];
 }
 
-- (void)addRightMenuButton
-{
-    AMSlideMenuMainViewController *mainVC = [AMSlideMenuMainViewController getInstanceForVC:self];
-    
-    UINavigationItem *navItem = self.navigationItem;
-    
-    UIButton *rightBtn = [UIButton buttonWithType:UIButtonTypeCustom];
-    [mainVC configureRightMenuButton:rightBtn];
-    [rightBtn addTarget:mainVC action:@selector(openRightMenu) forControlEvents:UIControlEventTouchUpInside];
-    
-    navItem.rightBarButtonItem = [[UIBarButtonItem alloc] initWithCustomView:rightBtn];
-}
+
 
 - (void)removeLeftMenuButton
 {
@@ -65,12 +54,7 @@
     navItem.leftBarButtonItem = nil;
 }
 
-- (void)removeRightMenuButton
-{
-    UINavigationItem *navItem = self.navigationItem;
 
-    navItem.rightBarButtonItem = nil;
-}
 
 - (void)enableSlidePanGestureForLeftMenu
 {
