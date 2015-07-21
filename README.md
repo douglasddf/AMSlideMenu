@@ -10,5 +10,5 @@ With this library you can create one sliding menu, changed to support the approa
 1. Slide menu with <b>left</b> menu only. <br> 
 2. Slide menu with a <b>fixed left</b> menu on landscape orientation 
 
-<img src="iPadSupportMasterDetailApprouch" width="1024px">
+<img src="iPadSupportMasterDetailApprouch.png" width="1024px">
 
